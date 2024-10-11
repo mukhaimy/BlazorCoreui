@@ -1,31 +1,44 @@
-﻿<ul class="sidebar-nav sidebar-lg" data-coreui="navigation" data-simplebar="">
-    <li class="nav-item">
-        <a class="nav-link" href="index.html">
-            <svg class="nav-icon">
-                <use xlink:href="vendors/Coreui/vendors/@@coreui/icons/svg/free.svg#cil-speedometer"></use>
-            </svg> Dashboard
-        </a>
-    </li>
-    <li class="nav-title">Theme</li>
-    <li class="nav-item">
-        <NavLink class="nav-link" href="/Counter">
-            <svg class="nav-icon">
-                <use xlink:href="vendors/Coreui/vendors/@@coreui/icons/svg/free.svg#cil-drop"></use>
-            </svg> Colors
-        </NavLink>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="typography.html">
-            <svg class="nav-icon">
-                <use xlink:href="vendors/Coreui/vendors/@@coreui/icons/svg/free.svg#cil-pencil"></use>
-            </svg> Typography
-        </a>
-    </li>
+﻿<div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+    <div class="sidebar-header border-bottom">
+        <!--s:LOGO-->
+        <div class="sidebar-brand">
+            <svg class="sidebar-brand-full" width="88" height="32" alt="CoreUI Logo">
+                <use xlink:href="vendors/Coreui/assets/brand/coreui.svg#full"></use>
+            </svg>
+            <svg class="sidebar-brand-narrow" width="32" height="32" alt="CoreUI Logo">
+                <use xlink:href="vendors/Coreui/assets/brand/coreui.svg#signet"></use>
+            </svg>
+        </div>
+        <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
+        <!--e:LOGO-->
+    </div>
+
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+        <li class="nav-item">
+            <a class="nav-link" href="/home">
+                <svg class="nav-icon">
+                    <use xlink:href="vendors/Coreui/vendors/@@coreui/icons/svg/free.svg#cil-speedometer"></use>
+                </svg> Dashboard
+            </a>
+        </li>
+        <li class="nav-title">TODO</li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Counter">
+                <i class="las la-calculator nav-icon"></i> Counter                
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Weather">
+                <i class="las la-cloud-showers-heavy nav-icon"></i> Weather
+            </a>
+        </li>
+       
 
 
-</ul>
-<div class="sidebar-footer  sidebar-lg border-top d-none d-md-flex">
-    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    </ul>
+    <div class="sidebar-footer  border-top d-none d-md-flex">
+        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    </div>
 </div>
 
 @code {

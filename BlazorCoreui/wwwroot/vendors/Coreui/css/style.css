@@ -241,6 +241,12 @@
   }
 }
 
+
+/*Tabahan Mukhaimy*/
+.mybg {
+    background-color: var(--cui-body-bg);
+}
+
 body {
   margin: 0;
   font-family: var(--cui-body-font-family);
